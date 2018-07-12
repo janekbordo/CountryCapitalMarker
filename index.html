@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header-main">
+        <h2>Click the flag to see the capital of the country on the map</h2>
+    </header>
+
+    <div class="container countries justify-content-center">
+        <div class="col-lg-3 col-sm-8 col-10 country">
+            <div class="flag" id="france">
+                <div class="capital" id="paris">
+                    <p>Show Paris</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-8 col-10 country">
+            <div class="flag" id="poland">
+                <div class="capital" id="warsaw">
+                    <p>Show Warsaw</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-8 col-10 country">
+            <div class="flag" id="croatia">
+                <div class="capital" id="zagreb">
+                    <p>Show Zagreb</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container google-map"> 
+        <div class="row">
+            <div class="col-10 justify-content-center map-viewer" id="map">
+            </div>
+        </div>
+    </div>
+
+   
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCM6Gi7sob4KYfJsHicUMxIyaB5C683xa4&callback=myMap"></script>
+
+</body>
+
+</html>

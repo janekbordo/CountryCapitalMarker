@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/nasa-43563-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.header-main {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 45px;
+}
+
+
+.countries {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container{
+    padding: 0;
+}
+
+.container .country {
+    height: 200px;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    padding: 0;
+    margin: 10px;
+}
+
+.container .country .flag {
+
+}
+
+.flag {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    border-radius: 15px;
+}
+#poland {
+    background-image: url('../img/poland.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#france {
+    background-image: url('../img/france.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#croatia {
+    background-image: url('../img/croatia.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.countries .country .flag .capital {
+    opacity: 0;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:15px;
+    color: #000;
+    font-size: 25px;
+    
+}
+
+.countries .country .flag .capital:hover {
+    opacity: 1;
+    cursor: pointer;
+    background-color: rgba(66, 244, 173, 0.4);
+    transition-duration: 0.4s;
+}
+
+.container .google-map {
+    margin: 30px;
+}
+
+.container .map-viewer{
+    background-color: #fff;
+    height:400px;
+    opacity: 0;
+    margin: 30px auto;
+}
+
